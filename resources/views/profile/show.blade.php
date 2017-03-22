@@ -9,7 +9,7 @@
         <div class="form-group">
             <div class="form-group">
                 <div class="col-sm-6">
-                    <a href="profile.blade.php">
+                    <a href="{{ url()->previous() }}">
                         <button type="button" class="btn btn-primary">
                             <i class="fa fa-arrow-left"></i> Terug
                         </button>
