@@ -10,14 +10,14 @@
             <div class="menu_section">
                 <ul class="nav side-menu">
                     <li>
-                        <a href="javascript:void(0)">
+                        <a href= "/injury_card/index.blade.php">
                             <i class="fa fa-map"></i>
                             Gewondekaart
                             <span class="label label-success pull-right"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">
+                        <a href="{{ url ('/protocollen') }}">
                             <i class="fa fa-hospital-o"></i>
                             Protocollen
                             <span class="label label-success pull-right"></span>

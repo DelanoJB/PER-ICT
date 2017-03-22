@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class RoutesController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -22,8 +22,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function airway()
     {
-        return view('injury_card.index');
+        return view('protocollen.airway');
+    }
+
+    public function breathing()
+    {
+        return view('protocollen.breathing');
     }
 }
