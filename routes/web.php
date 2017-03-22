@@ -17,11 +17,13 @@ Route::get('/', 'HomeController@index');
 Route::resource('/profile', 'UserController');
 Route::resource('/users', 'UserController');
 Route::resource('/admin', 'UserController');
+Route::resource('injury_card', 'Injury_cardsController');
 
 Route::get('/createuser', function()
 {
     return View::make('admin/createuser');
 });
+
 Route::get('/edit', function()
 {
     return View::make('admin/edit');
