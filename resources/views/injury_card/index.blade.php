@@ -16,6 +16,9 @@
         td {
             border: 1px solid #ccc;
         }
+        #date {
+            padding-top: 8px;
+        }
     </style>
     <!-- page content -->
     <div class="right_col" role="main">
@@ -33,11 +36,11 @@
         {{ Form::label('birthday_day', 'Geboortedatum', ['class' => 'control-label']) }}
         {{ Form::text('birthday_day', null, ['class' => 'form-control', 'maxlength' => '2', 'placeholder' => '09']) }}
     </div>
-    <div class="col-sm-1">
+    <div id="date" class="col-sm-1">
         {{ Form::label('birthday_month', ' ', ['class' => 'control-label']) }}
         {{ Form::text('birthday_month', null, ['class' => 'form-control','maxlength' => '2', 'placeholder' => '12']) }}
     </div>
-    <div class="col-sm-2">
+    <div id="date" class="col-sm-2">
         {{ Form::label('birthday_year', ' ', ['class' => 'control-label']) }}
         {{ Form::text('birthday_year', null, ['class' => 'form-control','maxlength' => '4', 'placeholder' => '1980']) }}
     </div>
