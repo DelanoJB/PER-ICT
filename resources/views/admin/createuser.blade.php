@@ -1,7 +1,9 @@
-@extends('layouts.dashboard')
-@section('page_heading','Admin')
+@extends('layouts.blank')
 
-@section('section')
+@section('main_container')
+    <div class="right_col" role="main">
+        <div class="col-md-9">
+
     {{ Form::open(['route' => ['users.store'], 'class' => 'form-horizontal']) }}
 
 
@@ -80,7 +82,5 @@
         </ul>
     @endif
 </div>
+    </div>
 @endsection
-@include('widgets.panel', array('header'=>true, 'as'=>'cotable'))
-
-@stop

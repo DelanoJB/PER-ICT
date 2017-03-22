@@ -15,10 +15,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
                         <li><a href="/profile/{{ Auth::user()->id }}"> Profile</a></li>
-                        <li>
-                            <a href="javascript:;">
-                                <span class="badge bg-red pull-right">50%</span>
-                                <span>Settings</span>
+                        <li><a href="/admin">
+                                <span>Admin</span>
                             </a>
                         </li>
                         <li><a href="javascript:;">Help</a></li>
