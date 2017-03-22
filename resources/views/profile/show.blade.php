@@ -1,5 +1,4 @@
-@extends('layouts.blank')
-
+@extends('layouts.dashboard')
 @section('main_container')
     <div class="right_col" role="main">
         <div class="col-md-9">
