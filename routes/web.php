@@ -16,15 +16,16 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/', 'HomeController@index');
 Route::resource('/profile', 'UserController');
 Route::resource('/users', 'UserController');
+Route::resource('/admin', 'UserController');
 Route::resource('injury_card', 'Injury_cardsController');
-
-
-Route::get('/admin', function()
-{
-    return View::make('admin/admin');
-});
 
 Route::get('/createuser', function()
 {
     return View::make('admin/createuser');
 });
+
+Route::get('/edit', function()
+{
+    return View::make('admin/edit');
+});
+

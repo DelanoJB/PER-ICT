@@ -8,6 +8,11 @@
                     Gebruiker Aanmaken
                 </button>
             </a>
+            <a href="edit">
+                <button type="button" class="btn btn-primary">
+                    Edit
+                </button>
+            </a>
             <div class="flash-message">
                 @foreach (['danger', 'warning', 'success', 'info'] as $msg)
                     @if(Session::has('alert-' . $msg))
@@ -18,7 +23,7 @@
             </div>
 
 
-            <?php $users = DB::table('users')->get(); ?>
+
             <table class="table table-striped table-hover">
                 <thead>
                 <th class="col-sm-1">Voornaam</th>
@@ -29,7 +34,8 @@
                 </thead>
                 <tbody>
                 @foreach ($users as $user)
-                    <tr class="row-link" style="cursor: pointer;">
+                    <tr class="row-link" style="cursor: pointer;"
+                        data-href="{{action('UserController@edit', ['id' => $user->id]) }}">
                         <td class="table-text">{{ $user->first_name}}</td>
                         <td class="table-text">{{ $user->last_name}}</td>
                         <td class="table-text">{{ $user->function}}</td>
@@ -42,6 +48,3 @@
         </div>
     </div>
 @endsection
-
-
-
