@@ -46,4 +46,47 @@ class UserController extends Controller
         return redirect('/admin');
 
     }
+
+public function edit($id)
+{
+
+    $user = User::find($id);
+
+
+    return View('admin/edit')
+        ->with('user', $user);
 }
+
+public function update($id)
+{
+    // validate
+    // read more on validation at http://laravel.com/docs/validation
+    $rules = array(
+        'name'       => 'required',
+        'email'      => 'required|email',
+    );
+    $validator = Validator::make(Input::all(), $rules);
+
+
+    // store
+    $user = User::find($id);
+    $user->name       = Input::get('name');
+    $user->email      = Input::get('email');
+    $user->save();
+
+    // redirect
+    Session::flash('message', 'Successfully updated user!');
+    return Redirect::to('admin');
+}
+public function destroy($id)
+{
+    // delete
+    $user = User::find($id);
+    $user->delete();
+
+    // redirect
+    Session::flash('message', 'Successfully deleted the User!');
+    return Redirect::to('admin');
+}
+}
+
