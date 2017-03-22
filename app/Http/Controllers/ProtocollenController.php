@@ -7,13 +7,6 @@ use Illuminate\Http\Request;
 
 class ProtocollenController extends Controller
 {
-
-//    work in progress
-//    private $views = [
-//            'airway' => 'protocollen.airway',
-//            'breathing' => 'protocollen.breathing',
-//        ];
-
     /**
      * Create a new controller instance.
      *
@@ -23,17 +16,6 @@ class ProtocollenController extends Controller
     {
         $this->middleware('auth');
     }
-
-
-//    work in progress
-//    public function show($id) {
-//        return view($this->views[$id]);
-//        switch ( $id ) {
-//            case 'airway' :
-//                return view('protocollen.airway');
-//        }
-//        return $id;
-//    }
 
     /**
      * Show the application dashboard.
