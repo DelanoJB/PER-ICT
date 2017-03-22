@@ -37,7 +37,7 @@
         </div>
         <div class="col-sm-2">
         {{ Form::label('housenumber', 'Huisnummer', ['class' => 'control-label']) }}
-        {{ Form::text('housenumber', null, ['class' => 'form-control', 'placeholder' => 'Huisnummer']) }}
+        {{ Form::number('housenumber', null, ['class' => 'form-control', 'placeholder' => 'Huisnummer']) }}
         </div>
         <div class="col-sm-4">
             {{ Form::label('street', 'Straat', ['class' => 'control-label']) }}
@@ -53,7 +53,7 @@
         </div>
         <div class="col-sm-6">
             {{ Form::label('phone_number', 'Telefoonnummer', ['class' => 'control-label']) }}
-            {{ Form::text('phone_number', null, ['class' => 'form-control', 'placeholder' => 'Telefoonnummer']) }}
+            {{ Form::number('phone_number', null, ['class' => 'form-control', 'placeholder' => 'Telefoonnummer']) }}
         </div>
         <div class="col-sm-6">
             {{ Form::label('username', 'Gebruikersnaam', ['class' => 'control-label']) }}
