@@ -9,6 +9,7 @@
 
     <!-- page content -->
     <div class="right_col" role="main">
+        <!-- work in progress see airway.blade.php -->
         <img src="Anafylxieallergie.png">
 
         <br><br>

@@ -9,7 +9,8 @@
 
     <!-- page content -->
     <div class="right_col" role="main">
-        <img src="Airway.png">
+        <!--it needs to be like this in all blades-->
+        <img src={{ asset("Airway.png") }}>
 
         <br>
         <a href="{{ url ('/breathing') }}" class="btn btn-info">3.2 Breathing</a>
