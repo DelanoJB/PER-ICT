@@ -8,6 +8,11 @@
                     Gebruiker Aanmaken
                 </button>
             </a>
+            <a href="edit">
+                <button type="button" class="btn btn-primary">
+                    Edit
+                </button>
+            </a>
             <div class="flash-message">
                 @foreach (['danger', 'warning', 'success', 'info'] as $msg)
                     @if(Session::has('alert-' . $msg))

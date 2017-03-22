@@ -22,4 +22,8 @@ Route::get('/createuser', function()
 {
     return View::make('admin/createuser');
 });
+Route::get('/edit', function()
+{
+    return View::make('admin/edit');
+});
 
