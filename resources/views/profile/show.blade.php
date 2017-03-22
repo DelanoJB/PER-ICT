@@ -38,7 +38,7 @@
             </div>
             <div class="col-sm-2">
                 {{ Form::label('huisnummer', 'Huisnummer', ['class' => 'control-label']) }}
-                {{ Form::text('id', $user->housenumber, ['class' => 'form-control', 'readonly' => 'true']) }}
+                {{ Form::number('id', $user->housenumber, ['class' => 'form-control', 'readonly' => 'true']) }}
             </div>
             <div class="col-sm-6">
                 {{ Form::label('woonplaats', 'Woonplaats', ['class' => 'control-label']) }}
