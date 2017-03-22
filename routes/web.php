@@ -24,6 +24,7 @@ Route::resource('/protocollen','ProtocollenController');
 Route::get('/airway','RoutesController@airway' );
 Route::get('/breathing','RoutesController@breathing');
 
+Route::get('/createuser', function()
 {
     return View::make('admin/createuser');
 });
