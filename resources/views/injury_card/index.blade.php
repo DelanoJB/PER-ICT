@@ -1,4 +1,4 @@
-@extends('layouts.blank')
+@extends('layouts.dashboard')
 @section('main_container')
 
 
@@ -42,7 +42,7 @@
         {{ Form::text('birthday_year', null, ['class' => 'form-control','maxlength' => '4', 'placeholder' => '1980']) }}
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-7">
         {{ Form::label('address', 'Adres', ['class' => 'control-label']) }}
         {{ Form::text('address', null, ['class' => 'form-control', 'placeholder' => 'Kalverstraat 46']) }}
     </div>
