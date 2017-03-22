@@ -17,6 +17,12 @@ Route::get('/', 'HomeController@index');
 Route::resource('/profile', 'UserController');
 Route::resource('/users', 'UserController');
 
+Route::resource('/protocollen','ProtocollenController');
+
+Route::get('/airway','RoutesController@airway' );
+Route::get('/breathing','RoutesController@breathing');
+
+
 Route::get('/admin', function()
 {
     return View::make('admin/admin');
@@ -26,4 +32,5 @@ Route::get('/createuser', function()
 {
     return View::make('admin/createuser');
 });
+
 
