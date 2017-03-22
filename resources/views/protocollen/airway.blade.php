@@ -1,15 +1,22 @@
 @extends('layouts.dashboard')
 
 @push('stylesheets')
-    <!-- Example -->
-    <!--<link href=" <link href="{{ asset("css/myFile.min.css") }}" rel="stylesheet">" rel="stylesheet">-->
+<!-- Example -->
+<!--<link href=" <link href="{{ asset("css/myFile.min.css") }}" rel="stylesheet">" rel="stylesheet">-->
 @endpush
 
 @section('main_container')
 
     <!-- page content -->
     <div class="right_col" role="main">
-test123
+        <img src="Airway.png">
+
+        <br>
+        <a href="{{ url ('/breathing') }}" class="btn btn-info">3.2 Breathing</a>
+
+
+        <br><br>
+
     </div>
     <!-- /page content -->
 

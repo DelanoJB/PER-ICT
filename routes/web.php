@@ -19,7 +19,11 @@ Route::resource('/users', 'UserController');
 Route::resource('/admin', 'UserController');
 Route::resource('injury_card', 'Injury_cardsController');
 
-Route::get('/createuser', function()
+Route::resource('/protocollen','ProtocollenController');
+
+Route::get('/airway','RoutesController@airway' );
+Route::get('/breathing','RoutesController@breathing');
+
 {
     return View::make('admin/createuser');
 });
@@ -28,4 +32,5 @@ Route::get('/edit', function()
 {
     return View::make('admin/edit');
 });
+
 
