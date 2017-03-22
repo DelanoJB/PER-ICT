@@ -25,7 +25,7 @@
         </div>
     <div class="col-sm-6">
         {{ Form::label('function', 'Functie', ['class' => 'control-label'] )  }}
-        {{ Form::select('function', ['Arts' => 'Arts', 'Hulpverlener' => 'Hulpverlener', 'Ambulancepersoneel' => 'Ambulancepersoneel', 'Verpleger' => 'Verpleger'],  'Arts', ['class' => 'form-control' ]) }}
+        {{ Form::select('function', ['Arts' => 'Arts', 'Hulpverlener' => 'Hulpverlener', 'Ambulancepersoneel' => 'Ambulancepersoneel'],  'Arts', ['class' => 'form-control' ]) }}
     </div>
         <div class="col-sm-6">
             {{ Form::label('date_of_birth', 'Geboortedatum', ['class' => 'control-label']) }}

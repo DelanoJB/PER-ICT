@@ -16,11 +16,7 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/', 'HomeController@index');
 Route::resource('/profile', 'UserController');
 Route::resource('/users', 'UserController');
-
-Route::get('/admin', function()
-{
-    return View::make('admin/admin');
-});
+Route::resource('/admin', 'UserController');
 
 Route::get('/createuser', function()
 {
