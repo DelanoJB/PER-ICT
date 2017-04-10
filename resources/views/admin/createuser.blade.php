@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('layouts.dashboa2rd')
 
 @section('main_container')
     <div class="right_col" role="main">
