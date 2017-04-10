@@ -8,14 +8,10 @@ use Illuminate\Http\Request;
 
 class Injury_cardsController extends Controller {
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return Response
-     */
     public function index()
     {
         return view('injury_card.index', [
+            'injury_cards' => GewondenKaart::orderBy( 'id', 'asc' )->get (),
         ]);
     }
 
@@ -26,7 +22,8 @@ class Injury_cardsController extends Controller {
      */
     public function create()
     {
-        //
+        return view ('injury_card.create'
+            );
     }
 
     /**

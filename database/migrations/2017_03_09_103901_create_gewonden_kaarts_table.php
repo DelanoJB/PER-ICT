@@ -14,6 +14,7 @@ class CreateGewondenKaartsTable extends Migration {
     {
         Schema::create('injury_card', function(Blueprint $table)
         {
+            /** injury_card */
             $table->increments('id');
             $table->string('gender');
             $table->string('name');

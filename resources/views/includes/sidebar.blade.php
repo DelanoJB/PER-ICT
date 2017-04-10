@@ -10,7 +10,7 @@
             <div class="menu_section">
                 <ul class="nav side-menu">
                     <li>
-                        <a href= "/injury_card/index.blade.php">
+                        <a href= "/injury_card/">
                             <i class="fa fa-map"></i>
                             Gewondekaart
                             <span class="label label-success pull-right"></span>
