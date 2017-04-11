@@ -22,6 +22,6 @@
             @endforeach
             </tbody>
         </table>
-        <a href="{{ url ('/injury_card/create') }}" class="btn btn-info">Gewondekaart maken</a>
+        <a href="{{ url ('/injury_card/create') }}" class="btn btn-primary">Gewondekaart maken</a>
     </div>
 @endsection
