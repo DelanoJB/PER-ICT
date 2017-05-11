@@ -17,9 +17,17 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('admin/admin', [
-            'users' => User::orderBy('id', 'asc')->get(),
-        ]);
+        if (Auth::user() && Auth::user()->function == 'Admin')  {
+            return view('admin/admin',
+                ['users' => User::orderBy('id', 'asc')->get(), ]);
+        }
+        elseif (Auth::user() && Auth::user()->function == 'admin')  {
+            return view('admin/admin',
+                ['users' => User::orderBy('id', 'asc')->get(), ]);
+        }
+        else {
+            return redirect('/');
+        }
     }
 
     public function store(CreateUserFormRequest $request)

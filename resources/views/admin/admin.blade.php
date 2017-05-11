@@ -29,7 +29,7 @@
                 <th class="col-sm-1">Voornaam</th>
                 <th class="col-sm-1">Achternaam</th>
                 <th class="col-sm-1">Functie</th>
-                <th class="col-sm-1">Telefoonnumer</th>
+                <th class="col-sm-1">Telefoonnummer</th>
                 <th class="col-sm-1">E-mailadres</th>
                 </thead>
                 <tbody>
