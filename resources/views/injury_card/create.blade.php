@@ -1,7 +1,6 @@
 @extends('layouts.dashboard')
 @section('main_container')
 
-
     <style>
         #lastform{
             padding-bottom: 20px;
@@ -22,6 +21,7 @@
     </style>
     <!-- page content -->
     <div class="right_col" role="main">
+        <a href="{{ url ('/injury_card') }}" class="btn btn-primary">Terug naar overzicht</a>
 
     {{Form::open(['route' => ['injury_card.store'], 'class' => 'form-horizontal']) }}
     <div class="col-sm-6">
